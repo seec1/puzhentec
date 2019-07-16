@@ -1,0 +1,389 @@
+ul,li,ol,dl,dt,dd,div,p,h1,h2,h3,h4,h5,h6,body{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* 轮播图 */
+.swiper-container{
+	position: relative;
+	width: 100%;
+}
+.swiper-container .swiper-carousel{
+	position: relative;
+	height: 480px;
+}
+.swiper-container .swiper-carousel .swiper-item{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 480px;
+	color: #fff;
+	opacity: 0;
+	transition: all 1s;
+}
+.swiper-container .swiper-carousel .swiper-item img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.swiper-container .swiper-carousel .swiper-item.active{
+	display: block;
+	opacity: 1;
+}
+.swiper-container .swiper-carousel .swiper-item .itemMsg{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 160px;
+	margin: auto 0;
+	text-align: center;
+}
+.swiper-container .swiper-carousel .swiper-item .itemMsg h1{
+	font-size: 65px;
+	font-weight: 300;
+}
+.swiper-container .swiper-carousel .swiper-item .itemMsg p{
+	font-size: 40px;
+	padding-top: 50px;
+}
+.swiper-container .swiper-carousel .swiper-item .itemMsg.lastItem h1{
+	text-indent: 4%;
+	text-align: left;
+}
+.swiper-container .swiper-indicators{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 15px;
+	width: 100px;
+	margin: 0 auto;
+	z-index: 1;
+}
+.swiper-container .swiper-indicators li{
+	width: 15px;
+	height: 15px;
+	background: #ccc;
+	border-radius: 50%;
+}
+.swiper-container .swiper-indicators li.active{
+	background: red;
+}
+.swiper-container .swiper-next{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	bottom: 0;
+	color: #fff;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0.4;
+	font-size: 40px;
+	height: 100px;
+	margin-top: -50px;
+}
+.swiper-container .swiper-prev{
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	bottom: 0;
+	color: #fff;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0.4;
+	font-size: 40px;
+	height: 100px;
+	margin-top: -50px;
+}
+/* 中部链接 */
+.m-main {
+	color: #555;
+}
+.m-main .container{
+	width: 90% !important;
+}
+.m-main h1{
+	padding: 65px 0;
+	text-align: center; 
+}
+.m-main .container{
+	box-shadow: #999 0px 0px 12px 0px;
+    border-radius: 5px;
+	padding: 0;
+}
+
+.m-main .container .linkBox .linkItem{
+	position: relative;
+	overflow: hidden;
+	transition: all 1s;
+	height: 431px;
+	border: 1px solid #eee;
+}
+.m-main .container .linkBox .linkItem .icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: inline-block;
+	width: 96px;
+	height: 96px;
+	background: url('http://www.puzhentec.com/www/style/gs/imgs/icon.png');
+	background-repeat:no-repeat ;
+	margin: 0 auto;
+}
+.m-main .container .linkBox .linkItem .titleIcon{
+	position: relative;
+	height: 115px;
+	text-align: center;
+}
+.m-main .container .linkBox .linkItem:hover .icon1{
+	background-position:0 -95px ;
+}
+.m-main .container .linkBox .linkItem:hover .icon2{
+	background-position:-120px -95px ;
+}
+.m-main .container .linkBox .linkItem:hover .icon3{
+	background-position:-240px -95px ;
+}
+.m-main .container .linkBox .linkItem .icon1{
+	background-position:0 1px ;
+}
+.m-main .container .linkBox .linkItem .icon2{
+	background-position:-120px 0 ;
+}
+.m-main .container .linkBox .linkItem .icon3{
+	background-position:-240px 0 ;
+}
+.m-main .container .linkBox .linkItem h2{
+	font-size: 25px;
+}
+.m-main .container .linkBox .linkItem:hover{
+	color: #fff;
+}
+.m-main .container .linkBox .linkItem:hover .linkBg{
+	top: 0;
+	opacity: 1;
+}
+.m-main .container .linkBox .linkItem .line{
+	width: 50%;
+	height: 2px;
+	background: #15507C;
+	transition: all 1.5s;
+	margin: 20px 0;
+}
+.m-main .container .linkBox .linkItem:hover .line{
+	width: 100%	;
+	background: #fff;
+}
+.m-main .container .linkBox .linkItem ul{
+	padding: 60px 60px 35px ;
+	background: rgba(0,0,0,0);
+}
+.m-main .container .linkBox .linkItem .linkBg{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 1s;
+	background-image: url('http://www.puzhentec.com/www/style/gs/imgs/q_mb1.jpg');
+	background-size: 100% auto;
+	z-index: -1;
+}
+@media screen and (min-width:990px) {
+	.m-main .container .linkBox{
+		height: 431px;
+	}
+}
+.m-main .container .linkBox .linkItem .itemList{
+	margin: 10px 0;
+}
+.m-main .container .linkBox .linkItem .itemMore{
+	margin-top: 35px;
+	text-align: right;
+}
+/* company */
+.company h1{
+	text-align: center;
+	margin: 75px 0 50px;
+}
+.company .container{
+	padding: 0;
+	width: 100%;
+	margin: 0;
+}
+.company .row{
+	width: 100%;
+	margin: 0;
+}
+.company .col-lg-6 {
+	padding: 0;
+}
+.company .companyTitleBox{
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 26px 8px;
+}
+.company .companyTitleBox p{
+	font-size: 28px;
+	color: #fff;
+}
+.company .companyTitleBox .en{
+	color: #82CCEB;
+}
+.company .companyImg{
+	height: 252px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.company .companyImg img{
+	transition: all 1.5s;
+}
+.company .companyMsg{
+	height: 252px;
+	overflow: hidden;
+	background: #0097d7;
+}
+.company .companyImg:hover img{
+	transform: scale(1.05,1.05);
+}
+.company .companyTitleBox a{
+	color: #82CCEB;
+	text-decoration: none;
+	margin-top: 30px;
+	font-size: 16px;
+}
+.company .companyText{
+	font-size: 16px;
+    line-height: 34px;
+    padding: 0 36px;
+    text-indent: 40px;
+    color: #fff;
+}
+.company .companyText ul{
+	text-indent: 0;
+}
+.company .companyText ul li{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px dashed #fff;
+}
+.company .companyText ul a{
+	color: #fff;
+	text-decoration: none;
+}
+@media screen and (max-width:990px) {
+	.m-main .container .linkBox{
+		height: 1293px;
+	}
+	.m-main .container .linkBox .linkItem{
+		height: 431px;
+	}
+	.m-main .container .linkBox .linkItem .linkBg{
+		height: 431px;
+	}
+	.company .row{
+		margin-bottom: 15px !important;
+	}
+}
+/* contact start */
+.contact{
+	background: #f1f1f1;
+}
+.contact h1{
+	text-align: center;
+	padding: 75px 0 50px;
+}
+.contact .container{
+	padding: 0;
+}
+.contact .container .msgBox{
+	padding: 0;
+}
+.contact label{
+	font-weight: 400;
+	margin-right: 20px;
+	font-size: 14px;
+	color: #555;
+}
+.contact .check{
+	margin-bottom: 30px;
+}
+.contact .check label{
+	margin-left: 5px;
+}
+.contact .msgBox form p{
+	margin-bottom: 25px;
+}
+.contact .personalMsg{
+	display: flex;
+	justify-content: space-between;
+}
+.contact .personalMsg > div{
+	margin-bottom: 15px;
+}
+.contact .personalMsg label{
+	margin: 0;
+	margin-left: 5px;
+	padding: 0 10px;
+}
+.contact .personalMsg input{
+	outline: none;
+	border: none;
+	height: 30px;
+}
+.contact .scription{
+	display: flex;
+}
+.contact .personalMsg #Description{
+	flex: 1;
+	vertical-align: top;
+	resize: none;
+	height: 170px;
+	border: none;
+	outline: none;
+}
+.contact .personalMsg #button{
+	margin-left: 47px;
+	margin-top: 40px;
+	width: 54px;
+	height: 26px;
+	background: #E60000;
+	color: #fff;
+}
+.contactRight{
+	box-sizing: border-box;
+	padding-left: 180px;
+	padding-top: 40px;
+}
+.contactRight .AttentionImg,.contactRight .AttentionMsg{
+	padding: 0;
+}
+.contactRight .AttentionImg{
+	width: 160px;
+}
+.contactRight ul{
+	margin-bottom: 35px;
+}
+.contactRight ul li{
+	height: 26px;
+	line-height: 26px;
+}
+.contactRight .AttentionBox .AttentionTitle{
+	margin-top: 20px;
+	font-size: 20px;
+}
+.contactRight .AttentionBox .AttentionIcon{
+	margin-top: 30px;
+}
+.contactRight .AttentionBox .AttentionIcon a{
+	font-size: 24px;
+	color:#FF0000;
+	text-decoration: none;
+	margin-right: 15px;
+}
