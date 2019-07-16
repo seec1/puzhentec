@@ -380,6 +380,7 @@ ul,li,ol,dl,dt,dd,div,p,h1,h2,h3,h4,h5,h6,body{
 }
 .contactRight .AttentionBox .AttentionIcon{
 	margin-top: 30px;
+	min-width: 180px;
 }
 .contactRight .AttentionBox .AttentionIcon a{
 	font-size: 24px;
