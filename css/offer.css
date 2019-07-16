@@ -1,0 +1,102 @@
+.context{
+    width: 100%;
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.banner img{
+    display: block;
+    width: 100%;
+}
+.banner p{
+    position: absolute;
+    width: 100%;
+    height: 52px;
+    top: 50%;
+    margin-top: -26px;
+    font-size: 52px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+}
+.main h1{
+    margin: 40px 0;
+    font-size: 28px;
+    color: #555;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.mainBox>li{
+    margin-bottom: 5px;
+}
+.mainList{
+    display: flex;
+    background-color: rgb(245,245,245);
+    border-bottom: 1px solid #e5e5e5;
+}
+.mainList li{
+    line-height: 16px;
+    color: #727272;
+    font-size: 12px;
+    /* text-indent: 20px; */
+    background: url(http://www.puzhentec.com/www/style/gs/imgs/ico5_1hr.png) no-repeat left center;
+    cursor: pointer;
+    padding: 15px 10px;
+    text-align: center;
+}
+.mainList li:nth-of-type(1){
+    width: 30%;
+}
+.mainList li:nth-of-type(2){
+    width: 20%;
+}
+.mainList li:nth-of-type(3){
+    width: 15%;
+}
+.mainList li:nth-of-type(4){
+    width: 20%;
+}
+.mainList li:nth-of-type(5){
+    width: 15%;
+    background: #b1b1b1;
+    color: #fff;
+}
+.part{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+    padding: 30px;
+    display: none;
+}
+.part h3{
+    padding-bottom: 10px;
+}
+.part h3 img{
+    display: inline-block;
+    margin-right: 15px;
+}
+.partList{
+    margin-bottom: 30px;
+}
+.partList li{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #5d5d5d;
+    line-height: 2;
+}
+.part a{
+    margin-left: 30px;
+    display: block;
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #4097d5;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 40px;
+}
