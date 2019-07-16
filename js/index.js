@@ -7,7 +7,7 @@ $('.swiper-container .swiper-next').on('click',function(){
 	}
 		$('.swiper-container .swiper-item').hide().css({'opacity':0});
 		$('.swiper-container .swiper-indicators li').removeClass('active');
-		$('.swiper-container .swiper-item').eq(i).show().css({'transition':'all 1s','opacity':'1'});
+		$('.swiper-container .swiper-item').eq(i).show().css({'transition':'all 2s','opacity':'1'});
 		$('.swiper-container .swiper-indicators li').eq(i).addClass('active');
 })
 $('.swiper-container .swiper-prev').on('click',function(){
@@ -17,7 +17,7 @@ $('.swiper-container .swiper-prev').on('click',function(){
 	}
 		$('.swiper-container .swiper-item').hide().css({'opacity':0});
 		$('.swiper-container .swiper-indicators li').removeClass('active');
-		$('.swiper-container .swiper-item').eq(i).show().css({'transition':'all 1s','opacity':'1'});
+		$('.swiper-container .swiper-item').eq(i).show().css({'transition':'all 2s','opacity':'1'});
 		$('.swiper-container .swiper-indicators li').eq(i).addClass('active');
 })
 function autoPlay(){
@@ -29,9 +29,9 @@ function autoPlay(){
 		console.log(i)
 		$('.swiper-container .swiper-item').hide().css({'opacity':0});
 		$('.swiper-container .swiper-indicators li').removeClass('active');
-		$('.swiper-container .swiper-item').eq(i).show().css({'transition':'all 1s','opacity':'1'});
+		$('.swiper-container .swiper-item').eq(i).show().css({'transition':'all 2s','opacity':'1'});
 		$('.swiper-container .swiper-indicators li').eq(i).addClass('active');
-	},3000)
+	},4000)
 }
 autoPlay();
 $('.swiper-container').on('mouseenter',function(){
