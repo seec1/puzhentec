@@ -1,9 +1,10 @@
 /* 头部导航样式 */
 
 #header {
+	position: relative;
     height: 90px;
+	z-index: 100;
 }
-
 .collapse.navbar-collapse.container.navbox {
     z-index: 1000;
 }
