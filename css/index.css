@@ -13,6 +13,10 @@ ul,li,ol,dl,dt,dd,div,p,h1,h2,h3,h4,h5,h6,body{
 	position: relative;
 	height: 480px;
 }
+.swiper-container .swiper-carousel a{
+	color: #fff;
+	text-decoration: none;
+}
 .swiper-container .swiper-carousel .swiper-item{
 	display: none;
 	position: absolute;
@@ -20,7 +24,6 @@ ul,li,ol,dl,dt,dd,div,p,h1,h2,h3,h4,h5,h6,body{
 	left: 0;
 	width: 100%;
 	height: 480px;
-	color: #fff;
 	opacity: 0;
 	transition: all 1s;
 }
@@ -396,6 +399,9 @@ ul,li,ol,dl,dt,dd,div,p,h1,h2,h3,h4,h5,h6,body{
 	text-decoration: none;
 	margin-right: 15px;
 }
+<<<<<<< HEAD
 .contactRight .AttentionBox .AttentionIcon .icon-icon_facebook{
 	margin-right: 0;
 }
+=======
+>>>>>>> be94501e1a89c8f580f0954a5c3a7b177fd11657
