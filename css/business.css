@@ -194,6 +194,12 @@
     align-items: center;
 }
 
+@media screen and (max-width:710px) {
+    .process-list {
+        height: 512px;
+    }
+}
+
 .process-cnt {
     height: 154px;
     width: 154px;
