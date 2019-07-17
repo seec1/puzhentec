@@ -1,7 +1,9 @@
 /* 头部导航样式 */
 
 #header {
+    position:relative;
     height: 90px;
+    z-index:99;
 }
 
 .collapse.navbar-collapse.container.navbox {
