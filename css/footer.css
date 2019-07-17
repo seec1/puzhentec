@@ -7,7 +7,7 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 6%;
+    padding: 20px 6% 42px;
     position: relative;
 }
 
