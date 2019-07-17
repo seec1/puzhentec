@@ -17,7 +17,7 @@
 #header .navbar-nav>li>a {
     height: 90px;
     line-height: 90px;
-    padding: 0 30px;
+    padding: 0 15px;
     font-size: 16px;
     color: #555;
 }
@@ -41,7 +41,6 @@
 
 #header .navbar-nav .nav-item:hover>a {
     color: #fff;
-    padding: 0 30px;
     font-weight: bold;
     background: #cc0000;
 }
@@ -128,3 +127,6 @@
 
 
 /* 头部导航样式 end */
+.nav>li>a {
+    padding: 0;
+}
